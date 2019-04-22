@@ -49,7 +49,7 @@
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h1 class="text-secondary"><b>Introduction to Project Background and Client:</b></h1>
-          <p contenteditable="true" class="text-dark"> Working with our client, NTT Data, we were tasked with making an  application that displayed their capabilities. They devised a scenario of medical professionals needing access to information while they were working. We were able to create a hands-free product that used object recognition to recognize objects and display the relevent information to their smart glasses.</p>
+          <p contenteditable="true" class="text-dark"> Working with our client, NTT Data, we were tasked with making an application that displayed their capabilities. They devised a scenario of medical professionals needing access to information while they were working. We were able to create a hands-free product that used object recognition to recognize objects and display the relevent information to their smart glasses.</p>
         </div>
       </div>
       <div class="row">
@@ -75,7 +75,6 @@
       </div>
     </div>
   </div>
-  </div>
   <div class="text-white">
     <div class="container">
       <div class="row">
@@ -84,16 +83,12 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-4 p-0" style=""><img class="img-fluid d-block float-right" src="ar9.jpg" width="300"></div>
-        <div class="col-lg-6 d-flex flex-column justify-content-center" style="">
-          <p class="mb-0 text-dark">Augmented Reality or AR is a technology that superimposes computer generated graphics onto a view of the real world. This can have the effect of making the graphics look like part of the natural environment, augmentations to reality, as if they are really there. These can be viewed through a screen, such as the popular game “Pokemon Go” </p>
+        <div class="col-lg-4 p-0" style=""><img class="img-fluid d-block mx-auto" src="ar9.jpg" width="300" style=""></div>
+        <div class="col-lg-8 d-flex flex-column justify-content-center" style="">
+          <p class="mb-0 text-dark" style="">Voice recognition has become an increasingly popular concept in recent years. in Being hands-free and able to use voice commands in throughout an AR application is great productivity benefits and experience. By making use of the IBM Watson Speech-to-Text API [4], we are able to precisely transcribe human’s phrases, which enable users to control the app with voice instead of using hands or external controller to click buttons. In our project, users are able to skip from ‘the welcome page’ to ‘the object detecting page’ if the voice recogniser detects the word ‘next’ in a speech. Moreover, users can pull instruction for the corresponding detected object, which delivers a good user experience and speeds up the process of doing tasks.&nbsp;</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-12">
-          <p class="mb-0 text-dark">The images can also be viewed on smart glasses: the user wears the glasses and the computer generated images and text, are projected directly onto the glasses, so as to be clearly visible, and superimposed on top of their actual view of the world in front of them! This gives the impression of having a large transparent screen approximately 2 metres in front of you! This technology can be put to all kinds of uses to display information, facts, figures or images. This can become an invaluable tool for all kinds of trainees and professionals, replacing the need to stop work and consult books, the information needed can be instantly brought up before their eyes whilst they work. There are many fun and entertaining possibilities too where AR in smart glasses can inform as well as entertain, enhancing children’s educational experiences such as bringing history to life around them.</p>
-        </div>
-      </div>
+      <div class="row"></div>
     </div>
   </div>
   <div class="text-dark">
@@ -107,10 +102,9 @@
         <div class="col-md-12">
           <div class="row">
             <div class="col-md-6">
-              <p class="mb-0 text-dark">Humans can naturally identify objects by their visual appearance, object recognition is the area of computer vision technology that strives to teach computers to do the same, invaluable for all manner of technologies from driverless cars to robotics. The computer has to first recognise an object, then be able to detect it in a picture. &nbsp; &nbsp;[11]</p>
-              <p class="mb-0 text-dark">Techniques of deep learning and machine learning are used to train a program to identify objects. For this project we used the technique of making a 3D model with photogrammetry, then tracking it in 3d space using the inbuilt camera on the smart glass. </p>
+              <p class="mb-0 text-dark">Object recognition is a must-have feature for our app. By using a well-known open-source software library called Tensorflow Lite [5], we are able to achieve the above feature even with our custom models. It is a lightweight and ideal solution for mobile or embedded device, in our case, the Epson Smart Glasses. However, training a Tensorflow model can really take a long time if starting from scratch. Luckily, we made use of Transfer Learning which is a process of retraining an existing pretrained model and produce a new model [6]. By figuring out the appropriate pretrained model and training parameters and simply running a training script and an optimization script, we can get the model file in 30 minutes. We later had a lot of testing with the models, it really demonstrates the performance in a way that is fast and accurate.&nbsp;</p>
             </div>
-            <div class="col-md-6"><img class="img-fluid d-block" src="object.jpg" width="300"></div>
+            <div class="col-md-6"><img class="img-fluid d-block mx-auto" src="object.jpg" width="300"></div>
           </div>
         </div>
       </div>
@@ -274,7 +268,7 @@
           <h1 class="text-secondary"><b>References</b></h1>
           <div class="row">
             <div class="col-md-12">
-              <p class="lead mb-0">[1]: Forbes Global 2000<br>[2]: https://en.wikipedia.org/wiki/NTT_Data&nbsp;<br>[3]: https://uk.nttdata.com/about-us&nbsp;<br>[4]: https://www.gosh.nhs.uk/about-us/our-history/breakthroughs&nbsp;<br>[5]: Telfer, K (2008). The remarkable story of Great Ormond Street Hospital. Simon &amp; Schuster. p11&nbsp;<br>[6]: https://www.ucl.ac.uk/child-health/&nbsp;<br>[7]: https://en.wikipedia.org/wiki/Great_Ormond_Street_Hospital&nbsp;<br>[8]: https://www.gosh.org/about-us/peter-pan&nbsp;<br>[9]: https://www.gosh.nhs.uk/news/latest-press-releases/new-unit-opening-great-ormond-street-hospital-set-revolutionise-how-technology-used-hospitals&nbsp;<br>[10]:http://www.cs.ucl.ac.uk/news/article/great_ormond_street_hospital_and_ucl_partnership_set_to_revolutionise_how_technology_is_used_in_hosp/&nbsp;&nbsp;<br>[11]: Google TensorFlow image https://www.techleer.com/articles/123-google-to-help-developers-in-object-identification-using-tensorflow-object-detection-api/&nbsp;&nbsp;</p>
+              <p class="lead mb-0">[1]: Forbes Global 2000<br>[2]: https://en.wikipedia.org/wiki/NTT_Data&nbsp;<br>[3]: https://uk.nttdata.com/about-us&nbsp;<br>[4]:&nbsp;https://www.ibm.com/watson/services/speech-to-text/<br>[5]:&nbsp;https://www.tensorflow.org/hub/tutorials/image_retraining<br>[6]: https://machinelearningmastery.com/transfer-learning-for-deep-learning/&nbsp;&nbsp;&nbsp;<br><br></p>
             </div>
           </div>
         </div>
