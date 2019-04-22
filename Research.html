@@ -60,8 +60,6 @@
           <p><b>Item identification for Shoppers:</b>&nbsp;Shopping aids are big business!, some of the object recognition apps designed to aid shoppers are ScreenShop [4], which identifies buyable items in photos to let the user know where they too can buy the same or similar fashion and accessory items. “CamFind” calls itself “The world’s most accurate mobile visual search engine” [5] The user takes a photo of any item they’re interested in, which is identified and suggestions of where to buy similar items are generated. “Flow Powered by Amazon” identifies millions of commercially packaged items from boxes of cereals to book covers, CDs and DVDs, can decode bar codes and QR codes, scan business cards etc. [6] </p>
           <p><b>Nature Identification:</b>&nbsp;The old days of going around the countryside or park with your little “Observers Book of Wild Flowers”, or “Trees” etc is now redundant with object recognition technology used in “electronic field guides” and apps like “Leafsnap” which allows the user to take a photograph of any flower or natural object for instant identification. [7] </p>
           <p><b>Food:</b>&nbsp;People are increasingly interested in food, healthy eating and sharing details of what they eat on social media! Apps such as “CalorieMama” identify photographed food dishes and estimate their calorific value and nutritional properties by utilizing a nutrition database. [8] </p>
-          <h2 class="mb-7 display-5 pt-2"><b>Augmented Reality Apps </b></h2>
-          <p>Apps that use augmented reality have become very popular and widespread over the last few years, since just about everyone goes around with a smart phone in their hand all the time! Some are purely for Entertainment purposes, perhaps the most well-known being “Pokemon Go” as well as many other popular games. Others designed for more educational purposes include “BBC Civilizations AR” which bring to life historical items and “Mondly” for language learning. [9]&nbsp;</p>
           <h2 class="mb-7 display-5 pt-2"><b>Apps Designed for Medical Use </b></h2>
           <p>Medical apps for the monitoring of health such as fitness testers have really taken off but there are few things on the market that perform the kind of basic medical equipment reference work that our app is meant to give. [10] Some referencing apps for use by doctors and nurses exist such as “Epocrates” for various uses such as looking up drug information and interactions, calculating BMI etc. It does not include use of object recognition or AR, the pill identifier feature relies on manual input of the pills features and printed codes. [11] “PEPID” is a symptom checker and diagnostic tool relying on a large database of information including reference diagrams and videos, via the cloud. [12] “UpToDate” is another medical reference app for mobile phones. [13] </p>
           <h2 class="mb-7 display-5 pt-2"><b>Conclusion </b></h2>
@@ -69,7 +67,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <p>Though very many apps make use of object recognition, augmented reality we don’t know of any that are specifically for medical object use, like ours. Several widely used apps are for professional medical reference purposes, but we don’t know of any that make use of inbuilt camera, object recognition and AR as ours does. </p>
+          <p>Though very many apps make use of object recognition, we don’t know of any that are specifically for medical object use, like ours. Several widely used apps are for professional medical reference purposes, but we don’t know of any that make use of inbuilt camera, object recognition and AR as ours does. </p>
         </div>
       </div>
     </div>
@@ -81,8 +79,8 @@
           <h3 class="text-center display-4 mb-0 text-secondary"><b>Related Technologies</b></h3>
           <div class="row">
             <div class="col-lg-12 d-flex flex-column justify-content-center">
-              <h2 class="mb-7 display-5"><b>Comparison of Potential Devices </b></h2>
-              <p class="">In theory the app could work on any android device such as a smart phone. The brief the client gave us specifically stated that it should be for the Epson Smart Glasses, so we favoured this as the final device that it should be designed for use on. In the situation described where the user is administering to a patient and using a perhaps unfamiliar piece of medical technology it would be smoother for them to use something which enables a clear view of what’s seen in-front of them, as well as the information related to the device. If using a handheld device like a smart phone they would have to keep looking away to read the information, by using the glasses the text would be clearly displayed in - front of them, merged with a real life view. This way it’s more of a true augmented reality and fulfils the need to be user friendly and innovative.&nbsp;<br>Use of the smart glasses is a convenient way of interfacing with the app , leaving the user hands free to work.</p>
+              <h2 class="mb-7 display-5"><b>&nbsp;Comparison of Potential Devices </b></h2>
+              <p class="">&nbsp;In theory the app could work on any android device such as a smart phone. The brief the client gave us specifically stated that it should be for the Epson Smart Glasses, so we favoured this as the final device that it should be designed for use on. In the situation described where the user is administering to a patient and using a perhaps unfamiliar piece of medical technology it would be smoother for them to use something which enables a clear view of what’s seen in-front of them, as well as the information related to the device. If using a handheld device like a smart phone they would have to keep looking away to read the information, by using the glasses the text would be clearly displayed in - front of them, merged with a real life view. This way it’s more of a true augmented reality and fulfils the need to be user friendly and innovative.&nbsp;<br>Use of the smart glasses is a convenient way of interfacing with the app , leaving the user hands free to work.</p>
             </div>
           </div>
         </div>
@@ -94,21 +92,47 @@
           </div>
           <div class="row">
             <div class="col-md-12">
+              <h3 class=""><b>Moverio SDK</b></h3>
+              <h4 class="">Pros :</h4>
+              <p>Works on the Epson Smart Glasses</p>
+              <p>Able to setup custom models easily</p>
+              <p>Favoured by the client</p>
+              <h4 class="">Cons :</h4>
+              <p>Maximum of 5 items allowed</p>
+              <p>Must select which object to recognize first </p>
+              <p>Doesn't automatically recognize, you have to pattern match </p> 
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class=""><b>Tensorflow Lite</b></h3>
+              <h4 class="">Pros :</h4>
+              <p>Lite version is not as intensive</p>
+              <p>Quite fast</p>
+              <p></p>
+              <h4 class="">Cons :</h4>
+              <p>Requires too high of an API to run on the glasses, needs to be depreciated in order to work[14]</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
               <h3 class=""><b>TensorFlow</b></h3>
               <h4 class="">Pros :</h4>
               <p>Offers multiple ways of doing the algorithm some of which a re suitable for working in real - time. Most well - known, therefore more documentation available to help with setting up.</p>
               <p>Favoured by the client</p>
               <h4 class="">Cons :</h4>
-              <p>Complex to set up [14]</p>
+              <p>Requires too high of an API to run on the glasses, needs to be depreciated in order to work[14]</p>
             </div>
           </div>
           <div class="row">
             <div class="col-md-12">
-              <h3 class=""><b>OpenIMAJ</b></h3>
+              <h3 class=""><b>Fritz</b></h3>
               <h4 class="">Pros :</h4>
-              <p>Easier to implement, requires less code.</p>
+              <p>Runs quite fast</p>
+              <p>Compatable with the glasses API</p>
               <h4 class="">Cons :</h4>
-              <p>Very limited documentation, has less features than TensorFlow [15]</p>
+              <p>Very little documentation</p>
+              <p>Not widely used</p>
             </div>
           </div>
           <div class="row">
@@ -118,7 +142,6 @@
               <p>Good documentation , appears to be popular and widely used, well known.</p>
               <h4 class="">Cons :</h4>
               <p>Not proper deep learning [16]</p>
-              <p>Therefore we initially proceeded to use TensorFlow, however we encountered problems with it as it performed far too slowly on the hardware making it almost unusable. We tested the android version of tensorflow (lite) on the glasses, having seen it perform well on a smart phone, but it ran too slowly to be practical, this may have been because the glasses have a low specification compared to a high end android phone for which TensorFlow is intended. We then downloaded Epson Moverio Software Development Kit (SDK) which is designed for use with this specific model of smart glasses, gaining access to the beta version which is available for developers via the Epson website. [17]</p>
             </div>
           </div>
         </div>
@@ -130,7 +153,7 @@
       <div class="row">
         <div class="col-lg-12 d-flex flex-column justify-content-center">
           <h3 class="mb-3 text-center display-4 text-secondary"><b>Summary of Final Decision </b></h3>
-          <p>add more</p>
+           <p> At first, we downloaded Epson Moverio Software Development Kit (SDK) which is designed for use with this specific model of smart glasses, gaining access to the beta version which is available for developers via the Epson website. However we quickly released the limitations of the SDK would not allow us to fulfill our clients requirements. This was because there was a limit of 5 custom models allowed and the ability to only recognize one model at a time, which you needed to select beforehand. Therefore we initially proceeded to use TensorFlow, however we encountered problems with it as the demo performed far too slowly on the hardware making it almost unusable. We were also unable to compile the code using API 22 and therefore couldn't modify the code. We tested the android version of Tensorflow (lite) on the glasses, having seen it perform well on a smart phone, but again ran into the same problem as the glasses have a low specification compared to a high end android phone for which TensorFlow is intended. After attempting to depreciate the version required, we decided to look for other options and stumbled across Fritz which was an API for tensorflow. Fritz worked well on our device and was able to perform all of our clients requiements quickly and thus we decided to use it in our final product.[17]</p>
         </div>
       </div>
     </div>
